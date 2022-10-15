@@ -2,7 +2,7 @@
 layout: defaults/page
 permalink: index.html
 narrow: true
-title: Welcome to The site of Runjunjin
+title: Welcome to The site of Group 28
 ---
 
 ## Attention

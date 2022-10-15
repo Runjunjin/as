@@ -1,0 +1,22 @@
+ <script type="text/javascript">
+                     function getMailtoUrl()
+                       {
+                        var args = [];
+                        if (typeof subject !== 'undefined') {
+                        args.push('subject=' + encodeURIComponent('主题内容'));}
+
+                         var name = $("input[name='name']").val();
+                         var email = $("input[name='email']").val();
+                         var message = $("input[id='message']").val()
+                         var body = name + "\n" + email 
+
+                         if (typeof body !== 'undefined') {args.push('body=' + encodeURIComponent(body))}
+
+                         var url = 'mailto:' + encodeURIComponent('yourname@yours.com');
+
+                         if (args.length > 0) {url += '?' + args.join('&');}
+                         console.log(url);
+                         window.location = url;
+                         return url;
+                         }
+           </script>
